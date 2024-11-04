@@ -4,9 +4,8 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.form');
-form.addEventListener('submit', onBtnSubmitClick);
 
-// console.log([form.elements.state.value]);
+form.addEventListener('submit', onBtnSubmitClick);
 
 function onBtnSubmitClick(event) {
   event.preventDefault();
@@ -20,8 +19,8 @@ function onBtnSubmitClick(event) {
       } else {
         reject(delay);
       }
-    });
-  }, delay);
+    }, delay);
+  });
 
   promise
     .then(delay => {
